@@ -28,16 +28,16 @@ public class App {
         System.out.println("\nDurante o atendimento siga minhas instruções abaixo:");
 
         System.out.printf("\nPrimeiramente informe seu nome: ");
-        String nome = scanner.next();
+        String nome = scanner.nextLine();
 
         System.out.printf("\nObrigado %s, %s", (nome),"como posso lhe ajudar? ");
-        String nome2 = scanner.next();
+        String resposta = scanner.nextLine();
         
-        nome = nome.toUpperCase();
-        nome2 = nome2.toUpperCase();
+        // Deixando em caixa alta a resposta
+        resposta = resposta.toUpperCase();
 
-        System.out.println(nome);
-        System.out.println(nome2);
+        // Resposta esperada
+        System.out.println("Sua resposta foi: " + resposta);
 
         scanner.close();
     }
