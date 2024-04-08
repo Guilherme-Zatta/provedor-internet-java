@@ -5,18 +5,20 @@ public class Correcao {
         String provedor = "CineMax";
         System.out.printf("Olá, bem-vindo a central de atendimento %s", provedor);
         String atendente = "Mary Jane";
-        System.out.printf("Meu nome é %s, sou seu assistente virtual", atendente);
+        System.out.printf("\nMeu nome é %s, sou seu assistente virtual", atendente);
 
-        System.out.println("Durante o atendimento siga minhas instruções");
+        System.out.print("\nDurante o atendimento siga minhas instruções");
 
-        System.out.println("Primeiramente informe seu nome");
+        System.out.print("\nPrimeiramente informe seu nome");
         Scanner scanner = new Scanner(System.in);
         String nome = scanner.next();
 
-        System.out.printf("Obrigado s%, como posso lhe ajudar?", nome);
- 
+        System.out.printf("Obrigado %s, como posso lhe ajudar?", nome);
+
         String resposta = scanner.next();
 
+        System.out.printf("\nSua resposta foi: \n %s", resposta);
 
-        }
+        scanner.close();
     }
+}
