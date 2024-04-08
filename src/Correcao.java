@@ -18,14 +18,13 @@ public class Correcao {
         System.out.print("\nPrimeiramente informe seu nome");
         String nome = scanner.nextLine();
 
-        // 5 - Leia a pergunta da pessoa
+        // 5- Leia a pergunta da pessoa
         System.out.printf("Obrigado %s, como posso lhe ajudar?", nome);
-
-        // 6 - Imprima a pergunta da pessoa
-        String resposta = scanner.nextLine();
+        String pergunta = scanner.nextLine();
 
         // Imprimindo texto concatenado
-        System.out.println("Sua resposta foi: " + resposta);
+        // 6- Imprima a pergunta da pessoa
+        System.out.println("Sua pergunta foi: " + pergunta);
 
         // 7 - Feche o scanner
         scanner.close();
